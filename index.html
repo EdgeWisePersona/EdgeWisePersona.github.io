@@ -210,15 +210,12 @@
             <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
           </div>
 
+          <div class="is-size-5 publication-authors" style="margin-top: 0.5rem;">
+            <span class="author-block"><a href="https://www.um.org/umap2026/" target="_blank">UMAP 2026</a></span>
+          </div>
+
                   <div class="column has-text-centered">
                     <div class="publication-links">
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/2505.11417.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                          <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                          <span>Paper</span>
-                        </a>
-                      </span>
                       <span class="link-block">
                         <a href="https://arxiv.org/abs/2505.11417" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
@@ -249,18 +246,18 @@
 </section>
 
 
-<!-- Teaser figure — hidden until diagram is ready
+<!-- Teaser figure -->
 <section class="hero teaser">
   <div class="container is-fullhd">
     <div class="hero-body">
-      <img src="static/images/edgewisepersona-diagram.png" alt="EdgeWisePersona pipeline diagram." style="width:100%; height:auto;" />
+      <img src="static/images/pipeline.png" alt="EdgeWisePersona pipeline: a character profile (A) yields a structured routine of triggers and actions (B), which an LLM expands into a multi-turn user-assistant session under a sampled context (C); compact on-device models are then evaluated on reconstructing the routine from the session." style="width:100%; height:auto;" />
       <p class="subtitle has-text-centered" style="font-size: 0.875rem; margin-top: 1.25rem;">
-        Pipeline overview.
+        <strong>Pipeline overview.</strong> The core component of the dataset consists of natural language sessions between users and their smart home systems. These dialogues simulate realistic, free-form interactions in which users express commands, preferences, or queries. The sessions are grounded in underlying formalized behavioral routines. These routines, along with the user profiles they compose, are also included in the dataset as ground truth annotations. The primary goal is to support and evaluate the ability of compact language models, running directly on edge devices, to reconstruct these routines from unstructured conversational history.
       </p>
     </div>
   </div>
 </section>
-End teaser figure -->
+<!-- End teaser figure -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -281,6 +278,109 @@ End teaser figure -->
   </div>
 </section>
 <!-- End paper abstract -->
+
+
+<!-- Dataset statistics -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Dataset Statistics</h2>
+    <div class="columns is-centered">
+      <div class="column is-two-thirds">
+        <table class="table is-fullwidth is-striped is-hoverable results-table">
+          <tbody>
+            <tr><td>Users</td><td class="has-text-right"><strong>200</strong></td></tr>
+            <tr><td>Sessions per user</td><td class="has-text-right"><strong>50</strong></td></tr>
+            <tr><td>Total sessions</td><td class="has-text-right"><strong>10,000</strong></td></tr>
+            <tr><td>Avg. messages per session</td><td class="has-text-right">9.88</td></tr>
+            <tr><td>Avg. routines per user</td><td class="has-text-right">3.98</td></tr>
+            <tr><td>Avg. triggers per routine</td><td class="has-text-right">4.98</td></tr>
+            <tr><td>Avg. devices per routine</td><td class="has-text-right">3.11</td></tr>
+            <tr><td>Avg. actions per routine</td><td class="has-text-right">8.24</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End dataset statistics -->
+
+
+<!-- Benchmark results -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Benchmark Results</h2>
+    <p class="has-text-centered" style="margin-bottom: 1.5rem;">
+      Profile-reconstruction performance across edge-deployable and large foundation models, grouped by model size. <em>Triggers</em> and <em>Actions</em> report exact-match accuracy on the routine's "When..." conditions and "Then..." commands, scored against the best-matching ground-truth routine. <em>Exact-match</em> reflects full structural correctness of the predicted routine; <em>Jaccard</em> captures partial overlap between predicted and reference routine components. Best score within each model group is in <strong>bold</strong>. All values are percentages.
+    </p>
+    <div class="table-container">
+      <table class="table is-fullwidth is-striped is-hoverable results-table has-text-centered">
+        <thead>
+          <tr>
+            <th>Model</th>
+            <th class="has-text-right">Triggers</th>
+            <th class="has-text-right">Actions</th>
+            <th class="has-text-right">Exact-match</th>
+            <th class="has-text-right">Jaccard</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="group-header"><td colspan="5"><em>Edge Device Models</em></td></tr>
+          <tr>
+            <td class="has-text-left">Phi-4-mini-4B</td>
+            <td class="has-text-right">2.4</td>
+            <td class="has-text-right">0.0</td>
+            <td class="has-text-right">0.0</td>
+            <td class="has-text-right">23.1</td>
+          </tr>
+          <tr>
+            <td class="has-text-left">Llama-3.2-3B</td>
+            <td class="has-text-right">76.8</td>
+            <td class="has-text-right">1.1</td>
+            <td class="has-text-right">1.1</td>
+            <td class="has-text-right">39.9</td>
+          </tr>
+          <tr>
+            <td class="has-text-left">Qwen2.5-3B</td>
+            <td class="has-text-right"><strong>77.3</strong></td>
+            <td class="has-text-right">1.0</td>
+            <td class="has-text-right">0.8</td>
+            <td class="has-text-right">55.4</td>
+          </tr>
+          <tr>
+            <td class="has-text-left">Gemma-3-4B</td>
+            <td class="has-text-right">52.8</td>
+            <td class="has-text-right"><strong>3.5</strong></td>
+            <td class="has-text-right"><strong>2.3</strong></td>
+            <td class="has-text-right"><strong>66.2</strong></td>
+          </tr>
+          <tr class="group-header"><td colspan="5"><em>Large Models</em></td></tr>
+          <tr>
+            <td class="has-text-left">Gemini-2.5-Flash</td>
+            <td class="has-text-right">94.4</td>
+            <td class="has-text-right"><strong>45.4</strong></td>
+            <td class="has-text-right"><strong>43.9</strong></td>
+            <td class="has-text-right"><strong>89.6</strong></td>
+          </tr>
+          <tr>
+            <td class="has-text-left">GPT-4o</td>
+            <td class="has-text-right"><strong>98.4</strong></td>
+            <td class="has-text-right">35.6</td>
+            <td class="has-text-right">35.0</td>
+            <td class="has-text-right">85.4</td>
+          </tr>
+          <tr>
+            <td class="has-text-left">DeepSeek-V3</td>
+            <td class="has-text-right">58.5</td>
+            <td class="has-text-right">31.9</td>
+            <td class="has-text-right">26.9</td>
+            <td class="has-text-right">81.9</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<!-- End benchmark results -->
 
 
 <!-- Image carousel — hidden until results are ready
@@ -384,14 +484,13 @@ End paper poster -->
         <span class="copy-text">Copy</span>
       </button>
     </div>
-    <pre id="bibtex-code"><code>@misc{bartkowiak2025edgewisepersona,
-  title         = {{EdgeWisePersona}: A Dataset for On-Device User Profiling from Natural Language Interactions},
-  author        = {Bartkowiak, Patryk and Podstawski, Micha{\l}},
-  year          = {2025},
-  eprint        = {2505.11417},
-  archivePrefix = {arXiv},
-  primaryClass  = {cs.CL},
-  url           = {https://arxiv.org/abs/2505.11417}
+    <pre id="bibtex-code"><code>@inproceedings{bartkowiak2026edgewisepersona,
+  title     = {{EdgeWisePersona}: A Dataset for On-Device User Profiling from Natural Language Interactions},
+  author    = {Bartkowiak, Patryk and Podstawski, Micha{\l}},
+  booktitle = {Proceedings of the 34th ACM Conference on User Modeling, Adaptation and Personalization (UMAP)},
+  year      = {2026},
+  publisher = {ACM},
+  url       = {https://arxiv.org/abs/2505.11417}
 }</code></pre>
   </div>
 </section>

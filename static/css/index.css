@@ -732,16 +732,33 @@ a:focus {
 }
 
 
+/* Results tables */
+.results-table {
+  font-variant-numeric: tabular-nums;
+}
+
+.results-table thead th {
+  border-bottom-width: 2px;
+}
+
+.results-table tr.group-header td {
+  background-color: rgba(37, 99, 235, 0.06);
+  color: var(--text-primary, #1f2937);
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
 /* Print styles */
 @media print {
   .more-works-container {
     display: none;
   }
-  
+
   .hero, .section {
     animation: none;
   }
-  
+
   .button {
     background: transparent !important;
     color: var(--text-primary) !important;
