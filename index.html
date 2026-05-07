@@ -211,7 +211,7 @@
           </div>
 
           <div class="is-size-5 publication-authors" style="margin-top: 0.5rem;">
-            <span class="author-block"><a href="https://www.um.org/umap2026/" target="_blank">UMAP 2026</a></span>
+            <span class="author-block">UMAP 2026</span>
           </div>
 
                   <div class="column has-text-centered">
@@ -246,7 +246,7 @@
 </section>
 
 
-<!-- Teaser figure -->
+<!-- Teaser figure — uncomment once static/images/pipeline.png is saved
 <section class="hero teaser">
   <div class="container is-fullhd">
     <div class="hero-body">
@@ -257,7 +257,7 @@
     </div>
   </div>
 </section>
-<!-- End teaser figure -->
+End teaser figure -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -310,13 +310,17 @@
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Benchmark Results</h2>
     <p class="has-text-centered" style="margin-bottom: 1.5rem;">
-      Profile-reconstruction performance across edge-deployable and large foundation models, grouped by model size. <em>Triggers</em> and <em>Actions</em> report exact-match accuracy on the routine's "When..." conditions and "Then..." commands, scored against the best-matching ground-truth routine. <em>Exact-match</em> reflects full structural correctness of the predicted routine; <em>Jaccard</em> captures partial overlap between predicted and reference routine components. Best score within each model group is in <strong>bold</strong>. All values are percentages.
+      Profile-reconstruction performance across edge-deployable and large foundation models, grouped by model size. <em>Trigger&nbsp;/&nbsp;Action Accuracy</em> is exact-match on the routine's "When..." conditions and "Then..." commands, scored against the best-matching ground-truth routine. <em>Routine Prediction</em> evaluates the full predicted routine: <em>Exact-match</em> requires full structural correctness; <em>Jaccard</em> captures partial overlap between predicted and reference routine components. Best score within each model group is in <strong>bold</strong>.
     </p>
     <div class="table-container">
       <table class="table is-fullwidth is-striped is-hoverable results-table has-text-centered">
         <thead>
           <tr>
-            <th>Model</th>
+            <th rowspan="2" class="has-text-left header-model">Model</th>
+            <th colspan="2" class="header-group">Trigger / Action Accuracy (%)</th>
+            <th colspan="2" class="header-group">Routine Prediction (%)</th>
+          </tr>
+          <tr>
             <th class="has-text-right">Triggers</th>
             <th class="has-text-right">Actions</th>
             <th class="has-text-right">Exact-match</th>
