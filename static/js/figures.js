@@ -217,7 +217,10 @@
       chart(card, Math.max(280, w));
     }
     render();
-    window.addEventListener('resize', function () { clearTimeout(timer); timer = setTimeout(render, 150); });
+    // Watch the card itself, not the window: a layout change without a window
+    // resize (a viewport switch, a font load, a scrollbar) must redraw too.
+    if (window.ResizeObserver) new ResizeObserver(function () { clearTimeout(timer); timer = setTimeout(render, 100); }).observe(card);
+    else window.addEventListener('resize', function () { clearTimeout(timer); timer = setTimeout(render, 150); });
   }
 
   function init() {

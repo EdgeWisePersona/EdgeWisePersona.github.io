@@ -844,6 +844,7 @@ a:focus {
   border-radius: var(--border-radius-lg);
   padding: 1.25rem 1.25rem 1rem;
   margin: 0 auto;
+  width: 100%;  /* inside a Bulma .hero (a flex column) auto margins would shrink it to its content */
   max-width: 960px;
   position: relative;
 }
