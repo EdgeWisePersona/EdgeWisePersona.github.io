@@ -1,0 +1,1251 @@
+{
+ "source": "https://huggingface.co/datasets/TCLResearchEurope/EdgeWisePersona (CC BY 4.0), users 0-2, first 6 sessions each",
+ "users": [
+  {
+   "character": "Ethan is a reserved librarian with a penchant for mystery novels. He speaks softly, often pausing to choose his words carefully. At home, he enjoys brewing herbal tea and solving crossword puzzles by the fireplace, surrounded by shelves of well-loved books.",
+   "routines": [
+    {
+     "triggers": {
+      "time_of_day": "evening",
+      "day_of_week": "weekday",
+      "sun_phase": "after_sunset",
+      "weather": "rainy",
+      "outdoor_temp": "cold"
+     },
+     "actions": {
+      "tv": null,
+      "ac": {
+       "temperature": 22,
+       "mode": "heat",
+       "fan_speed": 1
+      },
+      "lights": {
+       "brightness": 50,
+       "color": "warm",
+       "mode": "static"
+      },
+      "speaker": {
+       "volume": 30,
+       "equalizer": "balanced"
+      },
+      "security": null
+     }
+    },
+    {
+     "triggers": {
+      "time_of_day": "morning",
+      "day_of_week": "weekend",
+      "sun_phase": "daylight",
+      "weather": "sunny",
+      "outdoor_temp": "mild"
+     },
+     "actions": {
+      "tv": null,
+      "ac": null,
+      "lights": {
+       "brightness": 70,
+       "color": "neutral",
+       "mode": "static"
+      },
+      "speaker": {
+       "volume": 20,
+       "equalizer": "treble boost"
+      },
+      "security": null
+     }
+    },
+    {
+     "triggers": {
+      "time_of_day": "night",
+      "day_of_week": "weekday",
+      "sun_phase": "after_sunset",
+      "weather": "cloudy",
+      "outdoor_temp": "very cold"
+     },
+     "actions": {
+      "tv": null,
+      "ac": {
+       "temperature": 20,
+       "mode": "heat",
+       "fan_speed": 2
+      },
+      "lights": {
+       "brightness": 30,
+       "color": "warm",
+       "mode": "static"
+      },
+      "speaker": null,
+      "security": {
+       "armed": true,
+       "alarm_volume": 50
+      }
+     }
+    },
+    {
+     "triggers": {
+      "time_of_day": "afternoon",
+      "day_of_week": "weekend",
+      "sun_phase": "daylight",
+      "weather": "snowy",
+      "outdoor_temp": "cold"
+     },
+     "actions": {
+      "tv": {
+       "volume": 25,
+       "brightness": 40,
+       "input_source": "Netflix"
+      },
+      "ac": {
+       "temperature": 21,
+       "mode": "heat",
+       "fan_speed": 1
+      },
+      "lights": {
+       "brightness": 60,
+       "color": "cool",
+       "mode": "static"
+      },
+      "speaker": null,
+      "security": null
+     }
+    }
+   ],
+   "sessions": [
+    {
+     "session_id": 0,
+     "meta": {
+      "time_of_day": "evening",
+      "day_of_week": "weekday",
+      "sun_phase": "after_sunset",
+      "weather": "rainy",
+      "outdoor_temp": "cold"
+     },
+     "messages": [
+      {
+       "role": "user",
+       "text": "Could you turn on the lights? It's quite dim in here."
+      },
+      {
+       "role": "assistant",
+       "text": "Of course. What brightness level would you like for the lights?"
+      },
+      {
+       "role": "user",
+       "text": "50 percent, please. And could you set the color to warm?"
+      },
+      {
+       "role": "assistant",
+       "text": "Setting the lights to 50% brightness with a warm color. Is there anything else you'd like?"
+      },
+      {
+       "role": "user",
+       "text": "Yes, could you turn on the AC? It's a bit chilly."
+      },
+      {
+       "role": "assistant",
+       "text": "Certainly. What temperature and mode would you prefer for the AC?"
+      },
+      {
+       "role": "user",
+       "text": "Heat mode at 22 degrees, and fan speed at 1."
+      },
+      {
+       "role": "assistant",
+       "text": "Setting the AC to heat mode at 22 degrees with fan speed 1. Anything more?"
+      },
+      {
+       "role": "user",
+       "text": "Could you adjust the speaker volume to 30? I'd like some soft background music."
+      },
+      {
+       "role": "assistant",
+       "text": "Adjusting the speaker volume to 30. Would you like the equalizer set to balanced?"
+      },
+      {
+       "role": "user",
+       "text": "Yes, balanced is fine. Thank you."
+      },
+      {
+       "role": "assistant",
+       "text": "Setting the speaker equalizer to balanced. Is there anything else I can assist you with?"
+      },
+      {
+       "role": "user",
+       "text": "No, that's all for now. I think I'll just enjoy my book and tea."
+      },
+      {
+       "role": "assistant",
+       "text": "Enjoy your evening, Ethan. Let me know if you need anything else."
+      }
+     ],
+     "applied_routines": [
+      0
+     ]
+    },
+    {
+     "session_id": 1,
+     "meta": {
+      "time_of_day": "morning",
+      "day_of_week": "weekend",
+      "sun_phase": "daylight",
+      "weather": "sunny",
+      "outdoor_temp": "mild"
+     },
+     "messages": [
+      {
+       "role": "user",
+       "text": "Good morning. It's such a pleasant day outside. Could you adjust the lights to make it cozy for reading?"
+      },
+      {
+       "role": "assistant",
+       "text": "Of course. What brightness and color would you like for the lights?"
+      },
+      {
+       "role": "user",
+       "text": "I think 70% brightness with a neutral color would be perfect."
+      },
+      {
+       "role": "assistant",
+       "text": "Setting the lights to 70% brightness with a neutral color. Is there anything else you'd like to adjust?"
+      },
+      {
+       "role": "user",
+       "text": "Yes, could you set the speaker volume to a comfortable level for some soft background music?"
+      },
+      {
+       "role": "assistant",
+       "text": "What volume level and equalizer setting would you prefer for the speaker?"
+      },
+      {
+       "role": "user",
+       "text": "Volume at 20 with a treble boost, please."
+      },
+      {
+       "role": "assistant",
+       "text": "Adjusting the speaker volume to 20 with treble boost. Enjoy your music and reading."
+      }
+     ],
+     "applied_routines": [
+      1
+     ]
+    },
+    {
+     "session_id": 2,
+     "meta": {
+      "time_of_day": "night",
+      "day_of_week": "weekday",
+      "sun_phase": "after_sunset",
+      "weather": "cloudy",
+      "outdoor_temp": "very cold"
+     },
+     "messages": [
+      {
+       "role": "user",
+       "text": "The night is quite chilly, and the clouds make it even gloomier. Could you adjust the lights to a warmer tone?"
+      },
+      {
+       "role": "assistant",
+       "text": "Certainly, Ethan. I can set the lights to a warm color. Would you like me to adjust the brightness as well?"
+      },
+      {
+       "role": "user",
+       "text": "Yes, please set the brightness to 30. It's just right for reading by the fireplace."
+      },
+      {
+       "role": "assistant",
+       "text": "Understood. The lights are now set to warm color with 30% brightness. Is there anything else you'd like to adjust?"
+      },
+      {
+       "role": "user",
+       "text": "It's quite cold tonight. Could you turn on the AC to heat the room to 20 degrees?"
+      },
+      {
+       "role": "assistant",
+       "text": "Of course. I'll set the AC to heat mode at 20 degrees. Should I also adjust the fan speed?"
+      },
+      {
+       "role": "user",
+       "text": "Yes, set the fan speed to 2. That should be enough without being too noisy."
+      },
+      {
+       "role": "assistant",
+       "text": "Done. The AC is now in heat mode at 20 degrees with fan speed set to 2. Anything else you need?"
+      }
+     ],
+     "applied_routines": [
+      2
+     ]
+    },
+    {
+     "session_id": 3,
+     "meta": {
+      "time_of_day": "afternoon",
+      "day_of_week": "weekend",
+      "sun_phase": "daylight",
+      "weather": "snowy",
+      "outdoor_temp": "cold"
+     },
+     "messages": [
+      {
+       "role": "user",
+       "text": "The snow is coming down quite heavily outside. I think I'll stay in and enjoy a quiet afternoon. Could you adjust the lights to a comfortable level?"
+      },
+      {
+       "role": "assistant",
+       "text": "Of course. What brightness level would you like for the lights?"
+      },
+      {
+       "role": "user",
+       "text": "Let's set the brightness to 60 and the color to cool, please."
+      },
+      {
+       "role": "assistant",
+       "text": "Setting the lights to brightness 60 and cool color. Is there anything else you'd like to adjust?"
+      },
+      {
+       "role": "user",
+       "text": "Yes, could you set the TV to Netflix and adjust the volume to 25?"
+      },
+      {
+       "role": "assistant",
+       "text": "Setting the TV input source to Netflix and volume to 25. Would you like the brightness adjusted as well?"
+      },
+      {
+       "role": "user",
+       "text": "Yes, please set the TV brightness to 40."
+      },
+      {
+       "role": "assistant",
+       "text": "TV brightness set to 40. Is there anything else you need?"
+      },
+      {
+       "role": "user",
+       "text": "I think that's all for now. Thank you."
+      },
+      {
+       "role": "assistant",
+       "text": "You're welcome. Enjoy your afternoon."
+      }
+     ],
+     "applied_routines": [
+      3
+     ]
+    },
+    {
+     "session_id": 4,
+     "meta": {
+      "time_of_day": "evening",
+      "day_of_week": "weekday",
+      "sun_phase": "after_sunset",
+      "weather": "rainy",
+      "outdoor_temp": "cold"
+     },
+     "messages": [
+      {
+       "role": "user",
+       "text": "It's quite chilly and rainy this evening. Could you adjust the lights to a warmer tone?"
+      },
+      {
+       "role": "assistant",
+       "text": "Certainly. I can set the lights to a warm color. Would you like me to adjust the brightness as well?"
+      },
+      {
+       "role": "user",
+       "text": "Yes, please set the brightness to 50."
+      },
+      {
+       "role": "assistant",
+       "text": "The lights are now set to warm color with 50 brightness."
+      },
+      {
+       "role": "user",
+       "text": "I think I'll have some herbal tea and read a bit. Could you turn on the AC to heat the room?"
+      },
+      {
+       "role": "assistant",
+       "text": "Of course. What temperature and fan speed would you like for the AC?"
+      },
+      {
+       "role": "user",
+       "text": "Please set it to 22 degrees with fan speed at 1."
+      },
+      {
+       "role": "assistant",
+       "text": "The AC is now set to 22 degrees with fan speed at 1 in heat mode."
+      },
+      {
+       "role": "user",
+       "text": "Thank you. I'll enjoy my tea and book now."
+      },
+      {
+       "role": "assistant",
+       "text": "You're welcome. Enjoy your evening with the tea and book."
+      }
+     ],
+     "applied_routines": [
+      0
+     ]
+    },
+    {
+     "session_id": 5,
+     "meta": {
+      "time_of_day": "morning",
+      "day_of_week": "weekend",
+      "sun_phase": "daylight",
+      "weather": "sunny",
+      "outdoor_temp": "mild"
+     },
+     "messages": [
+      {
+       "role": "user",
+       "text": "Could you turn off the TV for me? I'd like to enjoy the quiet morning with my tea."
+      },
+      {
+       "role": "assistant",
+       "text": "The TV has been turned off. Would you like me to adjust any other devices while you enjoy your tea?"
+      },
+      {
+       "role": "user",
+       "text": "Yes, could you set the lights to 70% brightness with a neutral color? It's just right for reading."
+      },
+      {
+       "role": "assistant",
+       "text": "The lights have been set to 70% brightness with a neutral color. Is there anything else you'd like me to adjust?"
+      },
+      {
+       "role": "user",
+       "text": "Could you play some soft music on the speaker at volume 20 with a treble boost? It complements the morning ambiance."
+      },
+      {
+       "role": "assistant",
+       "text": "The speaker is now playing soft music at volume 20 with a treble boost. Enjoy your morning, Ethan."
+      },
+      {
+       "role": "user",
+       "text": "Thank you. That's all for now. I'll just sit here with my tea and my book."
+      },
+      {
+       "role": "assistant",
+       "text": "You're welcome, Ethan. Enjoy your tea and book. Let me know if you need anything else."
+      }
+     ],
+     "applied_routines": [
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "character": "Maya is a lively yoga instructor who radiates positivity. Her speech is peppered with encouraging phrases and laughter. She spends her free time practicing handstands in her sunlit living room and experimenting with vegan recipes, always sharing her creations with neighbors.",
+   "routines": [
+    {
+     "triggers": {
+      "time_of_day": "morning",
+      "day_of_week": "weekday",
+      "sun_phase": "before_sunrise",
+      "weather": "sunny",
+      "outdoor_temp": "mild"
+     },
+     "actions": {
+      "tv": null,
+      "ac": {
+       "temperature": 22,
+       "mode": "auto",
+       "fan_speed": 1
+      },
+      "lights": {
+       "brightness": 75,
+       "color": "warm",
+       "mode": "static"
+      },
+      "speaker": {
+       "volume": 50,
+       "equalizer": "balanced"
+      },
+      "security": null
+     }
+    },
+    {
+     "triggers": {
+      "time_of_day": "evening",
+      "day_of_week": "weekend",
+      "sun_phase": "after_sunset",
+      "weather": "rainy",
+      "outdoor_temp": "cold"
+     },
+     "actions": {
+      "tv": {
+       "volume": 30,
+       "brightness": 60,
+       "input_source": "Netflix"
+      },
+      "ac": {
+       "temperature": 24,
+       "mode": "heat",
+       "fan_speed": 2
+      },
+      "lights": {
+       "brightness": 40,
+       "color": "neutral",
+       "mode": "dynamic"
+      },
+      "speaker": null,
+      "security": null
+     }
+    },
+    {
+     "triggers": {
+      "time_of_day": "afternoon",
+      "day_of_week": "weekday",
+      "sun_phase": "daylight",
+      "weather": "cloudy",
+      "outdoor_temp": "warm"
+     },
+     "actions": {
+      "tv": null,
+      "ac": {
+       "temperature": 20,
+       "mode": "cool",
+       "fan_speed": 1
+      },
+      "lights": {
+       "brightness": 60,
+       "color": "cool",
+       "mode": "static"
+      },
+      "speaker": {
+       "volume": 40,
+       "equalizer": "treble boost"
+      },
+      "security": null
+     }
+    },
+    {
+     "triggers": {
+      "time_of_day": "night",
+      "day_of_week": "weekend",
+      "sun_phase": "after_sunset",
+      "weather": "snowy",
+      "outdoor_temp": "very cold"
+     },
+     "actions": {
+      "tv": null,
+      "ac": {
+       "temperature": 26,
+       "mode": "heat",
+       "fan_speed": 3
+      },
+      "lights": {
+       "brightness": 20,
+       "color": "warm",
+       "mode": "static"
+      },
+      "speaker": null,
+      "security": {
+       "armed": true,
+       "alarm_volume": 70
+      }
+     }
+    }
+   ],
+   "sessions": [
+    {
+     "session_id": 0,
+     "meta": {
+      "time_of_day": "morning",
+      "day_of_week": "weekday",
+      "sun_phase": "before_sunrise",
+      "weather": "sunny",
+      "outdoor_temp": "mild"
+     },
+     "messages": [
+      {
+       "role": "user",
+       "text": "Good morning! The sunrise is just breathtaking today, isn't it? Could you turn on the lights to match this beautiful morning vibe?"
+      },
+      {
+       "role": "assistant",
+       "text": "Of course! What brightness and color would you like for the lights to match this beautiful morning?"
+      },
+      {
+       "role": "user",
+       "text": "Oh, let's go with a warm color and 75% brightness. It's just perfect for my morning yoga session!"
+      },
+      {
+       "role": "assistant",
+       "text": "Setting the lights to warm color and 75% brightness. Enjoy your yoga session!"
+      },
+      {
+       "role": "user",
+       "text": "Thank you! And could you also set the AC to auto mode? It's a bit chilly but I don't want it too cold."
+      },
+      {
+       "role": "assistant",
+       "text": "Sure! What temperature and fan speed would you like for the AC in auto mode?"
+      },
+      {
+       "role": "user",
+       "text": "Let's set it to 22 degrees with fan speed at 1. That should be just right for stretching and handstands!"
+      },
+      {
+       "role": "assistant",
+       "text": "AC is now set to auto mode at 22 degrees with fan speed 1. Have a wonderful yoga session!"
+      },
+      {
+       "role": "user",
+       "text": "Perfect! Now, could you play some soft music on the speaker? Maybe at 50% volume?"
+      },
+      {
+       "role": "assistant",
+       "text": "Playing soft music at 50% volume. Would you like any specific equalizer setting?"
+      },
+      {
+       "role": "user",
+       "text": "Balanced is fine, thanks! This is going to be such a peaceful morning."
+      },
+      {
+       "role": "assistant",
+       "text": "Speaker is set to balanced equalizer at 50% volume. Enjoy your peaceful morning!"
+      }
+     ],
+     "applied_routines": [
+      0
+     ]
+    },
+    {
+     "session_id": 1,
+     "meta": {
+      "time_of_day": "evening",
+      "day_of_week": "weekend",
+      "sun_phase": "after_sunset",
+      "weather": "rainy",
+      "outdoor_temp": "cold"
+     },
+     "messages": [
+      {
+       "role": "user",
+       "text": "Oh wow, what a cozy evening! The rain is so soothing, isn't it? Could you set the TV to Netflix for me?"
+      },
+      {
+       "role": "assistant",
+       "text": "Sure! Setting the TV input source to Netflix. Would you like me to adjust the volume or brightness as well?"
+      },
+      {
+       "role": "user",
+       "text": "Yes, please! Let's make it a perfect movie night. Set the volume to 30 and brightness to 60."
+      },
+      {
+       "role": "assistant",
+       "text": "Got it! TV volume set to 30 and brightness to 60. Anything else you'd like to adjust?"
+      },
+      {
+       "role": "user",
+       "text": "Actually, it's a bit chilly with this rain. Can you set the AC to heat mode at 24 degrees with fan speed 2?"
+      },
+      {
+       "role": "assistant",
+       "text": "Absolutely! AC set to heat mode at 24 degrees with fan speed 2. Enjoy your warm and cozy evening!"
+      },
+      {
+       "role": "user",
+       "text": "Thanks! Oh, and let's set the lights to 40 brightness with a neutral color and dynamic mode. Perfect for some yoga after the movie!"
+      },
+      {
+       "role": "assistant",
+       "text": "Lights adjusted to 40 brightness, neutral color, and dynamic mode. Have a wonderful yoga session after your movie!"
+      }
+     ],
+     "applied_routines": [
+      1
+     ]
+    },
+    {
+     "session_id": 2,
+     "meta": {
+      "time_of_day": "afternoon",
+      "day_of_week": "weekday",
+      "sun_phase": "daylight",
+      "weather": "cloudy",
+      "outdoor_temp": "warm"
+     },
+     "messages": [
+      {
+       "role": "user",
+       "text": "Hey there! I just finished a yoga session and I'm feeling so energized! Could you turn on the AC for me? It's a bit warm in here."
+      },
+      {
+       "role": "assistant",
+       "text": "Of course! What temperature would you like me to set the AC to?"
+      },
+      {
+       "role": "user",
+       "text": "Let's go with 20 degrees, cool mode, and fan speed at 1. Oh, and could you also adjust the lights to 60% brightness with a cool color? I'm about to make some vegan snacks for my neighbors!"
+      },
+      {
+       "role": "assistant",
+       "text": "Setting the AC to 20 degrees, cool mode, fan speed 1, and adjusting the lights to 60% brightness with a cool color. Anything else you'd like me to do?"
+      },
+      {
+       "role": "user",
+       "text": "Yes, please set the speaker volume to 40 with treble boost. I'm in the mood for some uplifting music while I cook!"
+      },
+      {
+       "role": "assistant",
+       "text": "Setting the speaker volume to 40 with treble boost. Enjoy your cooking and the music!"
+      }
+     ],
+     "applied_routines": [
+      2
+     ]
+    },
+    {
+     "session_id": 3,
+     "meta": {
+      "time_of_day": "morning",
+      "day_of_week": "weekday",
+      "sun_phase": "daylight",
+      "weather": "sunny",
+      "outdoor_temp": "mild"
+     },
+     "messages": [
+      {
+       "role": "user",
+       "text": "Good morning! The sun is shining so brightly today, it's perfect for my morning yoga session. Could you please set the living room lights to 50% brightness?"
+      },
+      {
+       "role": "assistant",
+       "text": "Absolutely! I've set the living room lights to 50% brightness for your yoga session. Let me know if you'd like any other adjustments."
+      },
+      {
+       "role": "user",
+       "text": "Oh, and could you play some calming instrumental music in the background? Something soft and soothing."
+      },
+      {
+       "role": "assistant",
+       "text": "Of course! Playing calming instrumental music in the background now. Enjoy your yoga session!"
+      },
+      {
+       "role": "user",
+       "text": "Thank you! I'm feeling so energized today. After yoga, I think I'll try a new vegan smoothie recipe. Can you remind me to check the blender settings later?"
+      },
+      {
+       "role": "assistant",
+       "text": "I'll remind you to check the blender settings after your yoga session. What settings would you like me to remind you about?"
+      },
+      {
+       "role": "user",
+       "text": "Just to make sure it's on the 'smoothie' setting. I'm experimenting with some new ingredients today!"
+      },
+      {
+       "role": "assistant",
+       "text": "Got it! I'll remind you to check that the blender is on the 'smoothie' setting after your yoga. Have fun experimenting!"
+      },
+      {
+       "role": "user",
+       "text": "Thanks! You're the best. I'll probably share some with my neighbor later. She loves trying my creations."
+      },
+      {
+       "role": "assistant",
+       "text": "That's so kind of you! I'm sure your neighbor will love whatever delicious creation you come up with today. Enjoy your morning!"
+      }
+     ],
+     "applied_routines": []
+    },
+    {
+     "session_id": 4,
+     "meta": {
+      "time_of_day": "night",
+      "day_of_week": "weekend",
+      "sun_phase": "after_sunset",
+      "weather": "snowy",
+      "outdoor_temp": "very cold"
+     },
+     "messages": [
+      {
+       "role": "user",
+       "text": "Oh wow, it's such a snowy night! Perfect for some cozy time at home. Can you turn off the TV for me?"
+      },
+      {
+       "role": "assistant",
+       "text": "Sure, I've turned off the TV for you. Is there anything else you'd like to adjust?"
+      },
+      {
+       "role": "user",
+       "text": "Yes, please! It's freezing outside. Can you set the AC to heat mode at 26 degrees with fan speed 3?"
+      },
+      {
+       "role": "assistant",
+       "text": "Absolutely! I've set the AC to heat mode at 26 degrees with fan speed 3. Stay warm and cozy!"
+      },
+      {
+       "role": "user",
+       "text": "Thanks! And let's set the lights to a warm color with brightness at 20, static mode. I'm in the mood for some calm vibes."
+      },
+      {
+       "role": "assistant",
+       "text": "Got it! The lights are now set to warm color, brightness at 20, and static mode. Perfect for a relaxing evening!"
+      },
+      {
+       "role": "user",
+       "text": "One last thing, can you arm the security system and set the alarm volume to 70? I'm heading to bed soon."
+      },
+      {
+       "role": "assistant",
+       "text": "Of course! The security system is now armed with the alarm volume set to 70. Sweet dreams and stay safe!"
+      }
+     ],
+     "applied_routines": [
+      3
+     ]
+    },
+    {
+     "session_id": 5,
+     "meta": {
+      "time_of_day": "morning",
+      "day_of_week": "weekday",
+      "sun_phase": "before_sunrise",
+      "weather": "sunny",
+      "outdoor_temp": "mild"
+     },
+     "messages": [
+      {
+       "role": "user",
+       "text": "Good morning! The sunrise is just breathtaking today. Could you turn on the lights to match this beautiful morning?"
+      },
+      {
+       "role": "assistant",
+       "text": "Of course! What brightness and color would you like for the lights?"
+      },
+      {
+       "role": "user",
+       "text": "Let's go with 75% brightness and a warm color to keep it cozy."
+      },
+      {
+       "role": "assistant",
+       "text": "Setting the lights to 75% brightness with a warm color. Anything else you'd like to adjust?"
+      },
+      {
+       "role": "user",
+       "text": "Yes, could you set the AC to auto mode with the temperature at 22 degrees and fan speed to 1? I'm about to start my morning yoga."
+      },
+      {
+       "role": "assistant",
+       "text": "Adjusting the AC to auto mode, temperature at 22 degrees, and fan speed to 1. Enjoy your yoga session!"
+      },
+      {
+       "role": "user",
+       "text": "Thank you! Oh, and could you set the speaker volume to 50 with a balanced equalizer? I love some soft music during my practice."
+      },
+      {
+       "role": "assistant",
+       "text": "Setting the speaker volume to 50 with a balanced equalizer. Have a wonderful yoga session!"
+      }
+     ],
+     "applied_routines": [
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "character": "Liam is a pragmatic engineer who approaches conversations with logical precision. His hobby is woodworking, and his garage is a sanctuary of sawdust and half-finished furniture pieces, where he loses track of time crafting custom pieces for friends.",
+   "routines": [
+    {
+     "triggers": {
+      "time_of_day": "morning",
+      "day_of_week": "weekday",
+      "sun_phase": "before_sunrise",
+      "weather": "sunny",
+      "outdoor_temp": "cold"
+     },
+     "actions": {
+      "tv": null,
+      "ac": {
+       "temperature": 22,
+       "mode": "heat",
+       "fan_speed": 2
+      },
+      "lights": {
+       "brightness": 80,
+       "color": "warm",
+       "mode": "static"
+      },
+      "speaker": {
+       "volume": 30,
+       "equalizer": "balanced"
+      },
+      "security": null
+     }
+    },
+    {
+     "triggers": {
+      "time_of_day": "afternoon",
+      "day_of_week": "weekend",
+      "sun_phase": "daylight",
+      "weather": "cloudy",
+      "outdoor_temp": "mild"
+     },
+     "actions": {
+      "tv": {
+       "volume": 40,
+       "brightness": 60,
+       "input_source": "YouTube"
+      },
+      "ac": null,
+      "lights": {
+       "brightness": 50,
+       "color": "neutral",
+       "mode": "static"
+      },
+      "speaker": null,
+      "security": null
+     }
+    },
+    {
+     "triggers": {
+      "time_of_day": "evening",
+      "day_of_week": "weekday",
+      "sun_phase": "after_sunset",
+      "weather": "rainy",
+      "outdoor_temp": "warm"
+     },
+     "actions": {
+      "tv": null,
+      "ac": {
+       "temperature": 24,
+       "mode": "cool",
+       "fan_speed": 1
+      },
+      "lights": {
+       "brightness": 70,
+       "color": "warm",
+       "mode": "dynamic"
+      },
+      "speaker": null,
+      "security": {
+       "armed": true,
+       "alarm_volume": 50
+      }
+     }
+    },
+    {
+     "triggers": {
+      "time_of_day": "night",
+      "day_of_week": "weekend",
+      "sun_phase": "after_sunset",
+      "weather": "snowy",
+      "outdoor_temp": "very cold"
+     },
+     "actions": {
+      "tv": null,
+      "ac": {
+       "temperature": 20,
+       "mode": "heat",
+       "fan_speed": 3
+      },
+      "lights": {
+       "brightness": 30,
+       "color": "cool",
+       "mode": "static"
+      },
+      "speaker": null,
+      "security": {
+       "armed": true,
+       "alarm_volume": 70
+      }
+     }
+    }
+   ],
+   "sessions": [
+    {
+     "session_id": 0,
+     "meta": {
+      "time_of_day": "morning",
+      "day_of_week": "weekday",
+      "sun_phase": "before_sunrise",
+      "weather": "sunny",
+      "outdoor_temp": "cold"
+     },
+     "messages": [
+      {
+       "role": "user",
+       "text": "Good morning. It's a bit chilly today. Can you turn on the AC to heat mode?"
+      },
+      {
+       "role": "assistant",
+       "text": "I can do that. What temperature would you like me to set the AC to in heat mode?"
+      },
+      {
+       "role": "user",
+       "text": "Set it to 22 degrees, please. And could you adjust the fan speed to 2?"
+      },
+      {
+       "role": "assistant",
+       "text": "Setting the AC to heat mode at 22 degrees with fan speed 2. Anything else you'd like to adjust?"
+      },
+      {
+       "role": "user",
+       "text": "Yes, could you set the lights to 80% brightness with a warm color? I'm heading to the garage to work on a new woodworking project."
+      },
+      {
+       "role": "assistant",
+       "text": "Adjusting the lights to 80% brightness with a warm color. Enjoy your woodworking project in the garage."
+      },
+      {
+       "role": "user",
+       "text": "Thanks. Also, set the speaker volume to 30 with a balanced equalizer. I'll listen to some music while working."
+      },
+      {
+       "role": "assistant",
+       "text": "Setting the speaker volume to 30 with a balanced equalizer. Have a productive time in your garage."
+      },
+      {
+       "role": "user",
+       "text": "One last thing, turn off the TV and make sure the security system is active. I'll be in the garage for a while."
+      },
+      {
+       "role": "assistant",
+       "text": "Turning off the TV and activating the security system. Your garage sanctuary awaits."
+      }
+     ],
+     "applied_routines": [
+      0
+     ]
+    },
+    {
+     "session_id": 1,
+     "meta": {
+      "time_of_day": "afternoon",
+      "day_of_week": "weekend",
+      "sun_phase": "daylight",
+      "weather": "cloudy",
+      "outdoor_temp": "mild"
+     },
+     "messages": [
+      {
+       "role": "user",
+       "text": "Hey, I'm about to start working on a new woodworking project in the garage. Can you adjust the lights to a neutral color?"
+      },
+      {
+       "role": "assistant",
+       "text": "Sure, I can set the lights to a neutral color. What brightness level would you like?"
+      },
+      {
+       "role": "user",
+       "text": "Let's go with 50% brightness. Also, can you turn on the TV to YouTube? I'd like some background music."
+      },
+      {
+       "role": "assistant",
+       "text": "I can switch the TV input to YouTube. What volume level would you prefer?"
+      },
+      {
+       "role": "user",
+       "text": "Set the volume to 40 and the brightness to 60, please."
+      },
+      {
+       "role": "assistant",
+       "text": "Got it. TV volume is set to 40, brightness to 60, and input source is YouTube. Lights are at 50% brightness with a neutral color. Anything else?"
+      }
+     ],
+     "applied_routines": [
+      1
+     ]
+    },
+    {
+     "session_id": 2,
+     "meta": {
+      "time_of_day": "evening",
+      "day_of_week": "weekday",
+      "sun_phase": "after_sunset",
+      "weather": "rainy",
+      "outdoor_temp": "warm"
+     },
+     "messages": [
+      {
+       "role": "user",
+       "text": "It's been a long day in the garage working on a new oak table. The rain's been coming down all afternoon. Can you turn on the TV?"
+      },
+      {
+       "role": "assistant",
+       "text": "TV is now on. Would you like me to adjust any other settings?"
+      },
+      {
+       "role": "user",
+       "text": "Actually, it's a bit stuffy in here. Can you set the AC to cool mode at 24 degrees with fan speed 1?"
+      },
+      {
+       "role": "assistant",
+       "text": "AC has been set to cool mode at 24 degrees with fan speed 1. Anything else?"
+      },
+      {
+       "role": "user",
+       "text": "The lighting feels off for this weather. Can you set the lights to 70% brightness with warm color and dynamic mode?"
+      },
+      {
+       "role": "assistant",
+       "text": "Lights are now at 70% brightness with warm color and dynamic mode. Do you need anything else adjusted?"
+      },
+      {
+       "role": "user",
+       "text": "I think I'll listen to some music while I relax. Can you turn on the speaker?"
+      },
+      {
+       "role": "assistant",
+       "text": "Speaker is now on. Would you like to specify any particular settings for the speaker?"
+      },
+      {
+       "role": "user",
+       "text": "No, that's all for now. Just make sure the security system is armed with alarm volume at 50."
+      },
+      {
+       "role": "assistant",
+       "text": "Security system is armed with alarm volume set to 50. All settings are now as requested."
+      }
+     ],
+     "applied_routines": [
+      2
+     ]
+    },
+    {
+     "session_id": 3,
+     "meta": {
+      "time_of_day": "afternoon",
+      "day_of_week": "weekend",
+      "sun_phase": "daylight",
+      "weather": "sunny",
+      "outdoor_temp": "warm"
+     },
+     "messages": [
+      {
+       "role": "user",
+       "text": "I'm about to start working on a new oak table in the garage. Can you adjust the garage lights to 75% brightness?"
+      },
+      {
+       "role": "assistant",
+       "text": "Adjusting the garage lights to 75% brightness as requested. Is there anything else you'd like me to do?"
+      },
+      {
+       "role": "user",
+       "text": "Yes, could you play some classic rock on the garage speakers at medium volume?"
+      },
+      {
+       "role": "assistant",
+       "text": "Playing classic rock on the garage speakers at medium volume. Let me know if you'd like to adjust the volume or change the playlist."
+      },
+      {
+       "role": "user",
+       "text": "That's perfect for now. I'll let you know if I need anything else while I'm working on this table."
+      },
+      {
+       "role": "assistant",
+       "text": "Understood. I'll be here if you need any further adjustments. Enjoy your woodworking session."
+      }
+     ],
+     "applied_routines": []
+    },
+    {
+     "session_id": 4,
+     "meta": {
+      "time_of_day": "night",
+      "day_of_week": "weekend",
+      "sun_phase": "after_sunset",
+      "weather": "snowy",
+      "outdoor_temp": "very cold"
+     },
+     "messages": [
+      {
+       "role": "user",
+       "text": "It's freezing outside and snowing. Can you adjust the AC to make it warmer in here?"
+      },
+      {
+       "role": "assistant",
+       "text": "I can adjust the AC for you. What temperature would you like me to set it to?"
+      },
+      {
+       "role": "user",
+       "text": "Set it to 20 degrees, heat mode, and fan speed to 3."
+      },
+      {
+       "role": "assistant",
+       "text": "Setting the AC to 20 degrees, heat mode, and fan speed to 3. Is there anything else you'd like me to adjust?"
+      },
+      {
+       "role": "user",
+       "text": "Yeah, dim the lights to 30% brightness and set them to a cool color. I'm going to work on a woodworking project in the garage."
+      },
+      {
+       "role": "assistant",
+       "text": "Adjusting the lights to 30% brightness and cool color. Would you like me to set them to static mode as well?"
+      },
+      {
+       "role": "user",
+       "text": "Yes, static mode is fine. And turn on the security system, armed with alarm volume at 70."
+      },
+      {
+       "role": "assistant",
+       "text": "Setting the security system to armed with alarm volume at 70. The lights are now at 30% brightness, cool color, and static mode. Anything else?"
+      },
+      {
+       "role": "user",
+       "text": "No, that's all for now. I'm heading to the garage to work on a new table design."
+      },
+      {
+       "role": "assistant",
+       "text": "Understood. Enjoy your woodworking project. Let me know if you need any further adjustments."
+      }
+     ],
+     "applied_routines": [
+      3
+     ]
+    },
+    {
+     "session_id": 5,
+     "meta": {
+      "time_of_day": "morning",
+      "day_of_week": "weekday",
+      "sun_phase": "before_sunrise",
+      "weather": "sunny",
+      "outdoor_temp": "cold"
+     },
+     "messages": [
+      {
+       "role": "user",
+       "text": "Good morning. It's quite cold outside. Can you turn on the AC to heat mode?"
+      },
+      {
+       "role": "assistant",
+       "text": "Certainly. What temperature and fan speed would you like for the AC in heat mode?"
+      },
+      {
+       "role": "user",
+       "text": "Set it to 22 degrees with fan speed at 2."
+      },
+      {
+       "role": "assistant",
+       "text": "AC is now set to heat mode at 22 degrees with fan speed 2."
+      },
+      {
+       "role": "user",
+       "text": "Also, adjust the lights to 80% brightness with a warm color."
+      },
+      {
+       "role": "assistant",
+       "text": "Lights are now at 80% brightness with warm color. Would you like to set a specific mode for the lights?"
+      },
+      {
+       "role": "user",
+       "text": "Yes, set them to static mode."
+      },
+      {
+       "role": "assistant",
+       "text": "Lights are now in static mode at 80% brightness with warm color."
+      }
+     ],
+     "applied_routines": [
+      0
+     ]
+    }
+   ]
+  }
+ ]
+}
